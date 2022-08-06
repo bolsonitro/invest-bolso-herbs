@@ -8,11 +8,6 @@
         "start:dev": "nodemon src/index.js",
         "lint": "npx eslint \"**/*.{js,jsx}\" --quiet",
         "lint:fix": "npx eslint \"**/*.{js,jsx}\" --fix",
-        "knex:make": "npx knex --knexfile knexFile.js migrate:make",
-        "knex:migrate": "npx knex --knexfile knexFile.js migrate:latest",
-        "knex:rollback": "npx knex --knexfile knexFile.js migrate:rollback",
-        "knex:makeSeeds": "npx knex --knexfile knexFile.js seed:make",
-        "knex:runSeeds": "npx knex --knexfile knexFile.js seed:run",
         "test": "npm run spec",
         "spec": "herbs spec"
     },
