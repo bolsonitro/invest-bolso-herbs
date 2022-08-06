@@ -1,7 +1,7 @@
 const { usecase, step, Ok, Err } = require('@herbsjs/herbs')
 const { herbarium } = require('@herbsjs/herbarium')
 const axios = require('axios')
-const Price = require('../../entities/price')
+const Price = require('../entities/price')
 
 const dependency = {}
 
