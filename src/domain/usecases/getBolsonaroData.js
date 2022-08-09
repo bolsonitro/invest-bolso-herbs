@@ -17,7 +17,7 @@ const getBolsonaroData = injection =>
 
     setup: ctx => (ctx.di = Object.assign({}, dependency, injection)),
 
-    'Get the Bolsonaro fata and return': step(async ctx => {
+    'Get the Bolsonaro data and return': step(async ctx => {
       await axios.get("https://ftx.com/api/futures/BOLSONARO2022")
         .then(({ data }) => {
           return Ok(ctx.ret = data.result)

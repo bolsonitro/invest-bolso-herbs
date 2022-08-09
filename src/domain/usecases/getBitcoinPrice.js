@@ -18,10 +18,8 @@ const getBitcoinPrice = injection =>
     setup: ctx => (ctx.di = Object.assign({}, dependency, injection)),
 
     'Get the Bitcoin price and return': step(async ctx => {
-      console.log('caiu aqui')
       await axios.get("https://ftx.com/api/markets/BTC/USD")
         .then(({ data }) => {
-          console.log(data)
           return Ok(ctx.ret = data.result)
         })
         .catch((err) => {
